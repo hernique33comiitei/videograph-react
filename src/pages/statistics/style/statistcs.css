@@ -1,0 +1,116 @@
+.containerStatistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 850px;
+}
+
+.divStatistics {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.divGridStatistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  width: 90%;
+  height: 100px;
+  min-width: 1062px;
+  transform: translateY(30%);
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.gridItem img {
+  height: 60px;
+  margin-bottom: 25px;
+}
+
+.numberStatistics {
+  font-family: var(--font-play);
+  font-weight: 700;
+  font-size: clamp(45px, 2vw, 50px);
+  margin-bottom: 10px;
+}
+
+.texteStatistics {
+  font-size: clamp(10px, 2vw, 15px);
+}
+
+.gridItem::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-blueStrong);
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.gridItem:nth-child(1):after {
+  content: " ";
+  position: absolute;
+  top: -79%;
+  right: -188.5%;
+  width: 613px;
+  height: 613px;
+  z-index: 2;
+  transform: rotate(-45deg);
+  border-right: 1px solid var(--border-statistics);
+  border-top: 1px solid var(--border-statistics);
+}
+
+.gridItem:nth-child(2):after {
+  content: " ";
+  position: absolute;
+  bottom: -7.5%;
+  width: 613px;
+  height: 613px;
+  z-index: 2;
+  transform: rotate(45deg);
+  border-bottom: 1px solid var(--border-statistics);
+  border-right: 1px solid var(--border-statistics);
+}
+
+.gridItem:nth-child(3):after {
+  content: " ";
+  position: absolute;
+  bottom: -7.5%;
+  width: 613px;
+  height: 613px;
+  z-index: 2;
+  transform: rotate(45deg);
+  border-bottom: 1px solid var(--border-statistics);
+  border-right: 1px solid var(--border-statistics);
+}
+
+.gridItem:nth-child(4):after {
+  content: " ";
+  position: absolute;
+  top: 63%;
+  right: 32%;
+  width: 613px;
+  height: 613px;
+  z-index: 2;
+  transform: rotate(-45deg);
+  border-right: 1px solid var(--border-statistics);
+  border-top: 1px solid var(--border-statistics);
+}
+
+.gridItem:nth-child(2n) {
+  transform: translateY(-170px);
+}

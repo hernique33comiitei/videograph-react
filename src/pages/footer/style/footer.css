@@ -1,0 +1,143 @@
+.ContainerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-blackFooter);
+}
+
+.divFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
+  width: 100%;
+}
+
+.divFooterLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--border-geral);
+  padding: 30px 0;
+}
+
+.divFooterLogo > img {
+  height: 30px;
+}
+
+.socialMediaFooter {
+  gap: 10px !important;
+}
+
+.socialMediaFooter a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--border-geral);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.socialMediaFooter::before {
+  display: none;
+}
+
+.divFooterLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.componentLinkFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textMainFooter {
+  display: flex;
+  font-family: var(--font-play);
+  font-weight: 700;
+  font-size: clamp(16px, 2vw, 18px);
+  margin-bottom: 30px;
+}
+
+.textAboutUs {
+  max-width: 400px;
+  color: var(--color-whiteWeak);
+  line-height: 1.3;
+  font-size: clamp(13px, 2vw, 15px);
+  margin-bottom: 20px;
+}
+
+.divLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textLinkFooter {
+  color: var(--color-whiteWeak);
+  font-size: clamp(13px, 2vw, 15px);
+}
+
+.textNewsletter {
+  color: var(--color-whiteWeak);
+  line-height: 1.3;
+  font-size: clamp(13px, 2vw, 15px);
+  max-width: 400px;
+}
+
+.formFooter {
+  display: flex;
+  width: 100%;
+}
+
+.formFooter input {
+  background-color: transparent;
+  border: 1px solid var(--border-geral);
+  height: 45px;
+  width: 90%;
+  padding-left: 20px;
+  outline: none;
+}
+
+.formFooter button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  background-color: var(--color-blueWeak);
+  width: 10%;
+}
+
+.formFooter button svg {
+  font-size: 20px;
+}
+
+.divFooterTextCopyright {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid var(--border-geral);
+  padding: 30px 0;
+}
+
+.divFooterTextCopyright p {
+  color: var(--color-whiteWeak);
+}
+
+.divFooterTextCopyright a {
+  text-decoration: none;
+}
+
+.divFooterTextCopyright span,
+.divFooterTextCopyright span a {
+  color: var(--color-blueWeak);
+}

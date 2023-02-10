@@ -1,0 +1,55 @@
+.containerDivulgation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../assets/backgrounds/callto-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.divDivulgation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.divTextsDivulgation {
+  display: flex;
+  flex-direction: column;
+}
+
+.textMainDivulgation {
+  font-family: var(--font-play);
+  font-weight: 700;
+  font-size: clamp(43px, 2vw, 50px);
+}
+
+.textMainDivulgation:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.textMainDivulgation:nth-child(2) {
+  margin-bottom: 27px;
+}
+
+.textGenericDivulgation {
+  color: var(--color-whiteWeak);
+  font-size: clamp(13px, 2vw, 15px);
+}
+
+.buttonDivulgation {
+  margin-top: 70px;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: var(--color-blueWeak);
+  font-family: var(--font-play);
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 700;
+}

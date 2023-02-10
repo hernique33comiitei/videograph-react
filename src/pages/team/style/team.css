@@ -1,0 +1,132 @@
+.containerTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 750px;
+  background-image: url("../../../assets/backgrounds/team-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.divTeam {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.divTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textGenericTeam {
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.textMainTeam {
+  font-family: var(--font-play);
+  font-weight: 700;
+  font-size: clamp(32px, 2vw, 35px);
+}
+
+.textMainTeam::after {
+  display: block;
+  content: " ";
+  width: 60px;
+  height: 5px;
+  background-color: var(--color-blueWeak);
+  margin-top: 20px;
+}
+
+.divImagesTeam {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.componentImage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.afterImageTeam {
+  position: absolute;
+  left: 0;
+  bottom: -170px;
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/team/team-hover.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0;
+  transition: all 0.4s ease;
+}
+
+.componentImage:hover .afterImageTeam {
+  bottom: 0;
+  visibility: visible;
+}
+
+.textMainAfterImageTeam {
+  font-family: var(--font-play);
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.textGenericAfterImageTeam {
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.socialMediaTeam {
+  padding-left: 0;
+}
+
+.socialMediaTeam::before {
+  display: none;
+}
+
+.socialMediaTeam a:last-child {
+  display: none;
+}
+
+.imagesTeam {
+  width: 100%;
+  height: 100%;
+}
+
+.componentImage:nth-child(1) {
+  transform: translateY(100px);
+}
+
+.componentImage:nth-child(2) {
+  transform: translateY(50px);
+}
+
+.componentImage:nth-child(3) {
+  transform: translateY(0px);
+}
+
+.componentImage:nth-child(4) {
+  transform: translateY(-50px);
+}
+
+.containerButtonTeam {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.buttonTeam {
+  margin-top: 50px;
+}

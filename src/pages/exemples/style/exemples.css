@@ -1,0 +1,82 @@
+.containerExemples {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 650px;
+}
+
+.containerImageExemples {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+}
+
+.containerImageExemples:nth-child(1) {
+  background-image: url("../../../assets/portfolio/work-1.jpg");
+  grid-column: span 2;
+}
+
+.textContainerExemples {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px;
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  background-color: var(--background-blackWeak);
+  bottom: 0;
+  left: 0;
+  transform: translateY(200px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.exemplesTextMain {
+  font-family: var(--font-play);
+  font-weight: 700;
+  font-size: clamp(20px, 2vw, 22px);
+}
+
+.exemplesTextType {
+  color: var(--color-whiteWeak);
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.containerImageExemples:hover > .textContainerExemples {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.containerImageExemples:nth-child(2) {
+  background-image: url("../../../assets/portfolio/work-2.jpg");
+}
+
+.containerImageExemples:nth-child(3) {
+  background-image: url("../../../assets/portfolio/work-3.jpg");
+}
+
+.containerImageExemples:nth-child(4) {
+  background-image: url("../../../assets/portfolio/work-4.jpg");
+  grid-column: 5 / 7;
+  grid-row: span 2;
+}
+
+.containerImageExemples:nth-child(5) {
+  background-image: url("../../../assets/portfolio/work-5.jpg");
+}
+
+.containerImageExemples:nth-child(6) {
+  background-image: url("../../../assets/portfolio/work-6.jpg");
+}
+
+.containerImageExemples:nth-child(7) {
+  background-image: url("../../../assets/portfolio/work-7.jpg");
+  grid-column: span 2;
+}

@@ -1,0 +1,44 @@
+.containerHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid var(--border-geral);
+}
+
+.myLogoHeader {
+  height: 27%;
+}
+
+.containerOptionsHeader {
+  display: flex;
+  gap: 40px;
+}
+
+.containerOptionsHeader a {
+  position: relative;
+  text-decoration: none;
+  font-size: clamp(14px, 2vw, 16px);
+  font-family: var(--font-play);
+}
+
+.containerOptionsHeader a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-blueWeak);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.containerOptionsHeader a:nth-child(1)::after,
+.containerOptionsHeader a:hover::after {
+  width: 100%;
+  opacity: 1;
+}

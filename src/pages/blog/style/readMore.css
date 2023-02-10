@@ -1,0 +1,8 @@
+.btnReadMoreBlog {
+  display: flex;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  text-align: start;
+  font-size: clamp(14px, 2vw, 16px);
+}
