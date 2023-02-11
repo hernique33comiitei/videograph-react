@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  .containerTextApresentation .textSimple {
+    font-size: clamp(12px, 2vw, 14px);
+  }
+
+  .titleMain {
+    font-size: clamp(35px, 2vw, 50px);
+  }
+}

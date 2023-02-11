@@ -1,0 +1,34 @@
+@media (max-width: 930px) {
+  .containerTeam {
+    height: auto;
+    padding: 45px 0;
+  }
+
+  .divImagesTeam {
+    padding: 45px 0;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .componentImage {
+    transform: translate(0, 0) !important;
+  }
+
+  .buttonTeam {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .divImagesTeam {
+    grid-template-columns: 100%;
+  }
+
+  .componentImage {
+    height: 400px;
+  }
+
+  .imagesTeam {
+    object-fit: cover;
+  }
+}

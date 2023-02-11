@@ -3,9 +3,10 @@ import { FaTelegramPlane } from "react-icons/fa";
 import Container from "../../components/container/Container";
 import myLogo from "../../assets/logo/logo.png";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
+import ReadMore from "../blog/components/ReadMore";
 
 import "./style/footer.css";
-import ReadMore from "../blog/components/ReadMore";
+import "./style/mqFooter.css";
 
 function Footer() {
   return (

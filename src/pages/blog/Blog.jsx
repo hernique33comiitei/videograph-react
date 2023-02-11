@@ -1,7 +1,10 @@
 import { Pagination, A11y, Autoplay, Virtual } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
+import uuid from "react-uuid";
 
 import Container from "../../components/container/Container";
+import ReadMore from "./components/ReadMore";
 
 import "./style/blog.css";
 import "swiper/css";
@@ -10,10 +13,28 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/virtual";
 import "swiper/css/scrollbar";
-import uuid from "react-uuid";
-import ReadMore from "./components/ReadMore";
 
 function Blog() {
+  const [slidesPerViewState, setSlidesPerViewState] = useState(3);
+
+  function slidesPerView() {
+    const widthBody = document.body.clientWidth;
+    console.log(widthBody);
+    if (widthBody <= 630) {
+      return setSlidesPerViewState(1);
+    }
+    if (widthBody <= 930) {
+      return setSlidesPerViewState(2);
+    }
+    return setSlidesPerViewState(3);
+  }
+
+  window.addEventListener("resize", slidesPerView);
+
+  useEffect(() => {
+    slidesPerView();
+  }, []);
+
   return (
     <div className="containerBlog">
       <Container>
@@ -28,7 +49,7 @@ function Blog() {
               className="swiperRoot"
               modules={[Pagination, A11y, Autoplay, Virtual]}
               spaceBetween={30}
-              slidesPerView={3}
+              slidesPerView={slidesPerViewState}
               pagination={{ clickable: true }}
               autoplay={{
                 pauseOnMouseEnter: false,

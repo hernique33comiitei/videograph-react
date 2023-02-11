@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import uuid from "react-uuid";
 
 import Container from "../../components/container/Container";
+
 import "./style/statistcs.css";
+import "./style/mqStatistics.css";
 
 import iconStatistics1 from "../../assets/icons/ci-1.png";
 import iconStatistics2 from "../../assets/icons/ci-2.png";

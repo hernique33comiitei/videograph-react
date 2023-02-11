@@ -1,8 +1,11 @@
 import { useState } from "react";
+
 import Container from "../../components/container/Container";
 import Header from "../../components/header/Header";
 import TextApresentation from "./components/TextApresentation";
+
 import "./style/home.css";
+import "./style/mqHome.css";
 
 function Home() {
   const arrayPush = [];

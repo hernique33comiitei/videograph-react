@@ -1,0 +1,30 @@
+@media (max-width: 930px) {
+  .containerServices {
+    height: auto;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 35px;
+  }
+
+  .divButtonPrimaryService,
+  .apresentationModelNoImage {
+    grid-column: span 2;
+  }
+
+  .buttonService {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    grid-template-rows: repeat(6, auto);
+  }
+
+  .apresentationModel {
+    grid-column: span 2;
+  }
+}

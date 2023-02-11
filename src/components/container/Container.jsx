@@ -1,7 +1,7 @@
 import "../../styles/container.css";
 
-function Container({ children }) {
-  return <div className="container">{children}</div>;
+function Container({ children, classPersonalization = "" }) {
+  return <div className={`container ${classPersonalization}`}>{children}</div>;
 }
 
 export default Container;

@@ -11,6 +11,7 @@ import createVideoIcon from "../../assets/icons/si-3.png";
 import hostVideoICon from "../../assets/icons/si-4.png";
 
 import "./styles/services.css";
+import "./styles/mqServices.css";
 
 function Services() {
   const icons = [motionIcon, editingIcon, createVideoIcon, hostVideoICon];
@@ -28,7 +29,10 @@ function Services() {
           />
 
           <div className="divButtonPrimaryService">
-            <ButtonPrimary textButton="View all services" />
+            <ButtonPrimary
+              classPersonalization="buttonService"
+              textButton="View all services"
+            />
           </div>
 
           {icons.map((icon) => (

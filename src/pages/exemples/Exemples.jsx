@@ -1,4 +1,5 @@
 import "./style/exemples.css";
+import "./style/mqExemples.css";
 
 function Exemples() {
   return (

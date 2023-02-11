@@ -1,6 +1,7 @@
 import Container from "../../components/container/Container";
 
 import "./style/divulgation.css";
+import "./style/mqDivulgation.css";
 
 function Divulgation() {
   return (

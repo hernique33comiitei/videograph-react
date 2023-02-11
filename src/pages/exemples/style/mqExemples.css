@@ -1,0 +1,21 @@
+@media (max-width: 700px) {
+  .containerExemples {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1000px;
+  }
+
+  .containerImageExemples:nth-child(1),
+  .containerImageExemples:nth-child(2),
+  .containerImageExemples:nth-child(3),
+  .containerImageExemples:nth-child(5),
+  .containerImageExemples:nth-child(6),
+  .containerImageExemples:nth-child(7) {
+    grid-column: span 1 !important;
+  }
+
+  .containerImageExemples:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
