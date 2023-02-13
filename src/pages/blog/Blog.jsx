@@ -19,7 +19,6 @@ function Blog() {
 
   function slidesPerView() {
     const widthBody = document.body.clientWidth;
-    console.log(widthBody);
     if (widthBody <= 630) {
       return setSlidesPerViewState(1);
     }

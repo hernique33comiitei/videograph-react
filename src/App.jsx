@@ -15,9 +15,9 @@ import "./styles/index.css";
 function App() {
   const [activeLoad, setActiveLoad] = useState(true);
 
-  useEffect(() => {
+  window.addEventListener("load", () => {
     setActiveLoad(false);
-  }, []);
+  });
 
   return (
     <div className="App">
