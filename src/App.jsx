@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Load from "./components/load/Load";
+import LoadContextCreate from "./contexts/ContextLoad";
 import Blog from "./pages/blog/Blog";
 import Divulgation from "./pages/divulgation/Divulgation";
 import Exemples from "./pages/exemples/Exemples";
@@ -14,10 +15,9 @@ import "./styles/index.css";
 
 function App() {
   const [activeLoad, setActiveLoad] = useState(true);
-
-  window.addEventListener("load", () => {
+  useEffect(() => {
     setActiveLoad(false);
-  });
+  }, []);
 
   return (
     <div className="App">
